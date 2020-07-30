@@ -1,0 +1,18 @@
+{% extends 'layout.html' %}
+{% block title %}
+    Rango
+{% endblock %}
+{% block content %}
+
+<h2>{a=10}</h2>
+b=20
+resultado = f"""
+<h2>Numeros de[{a},{b}]</h2>
+Resultado: <br>
+<ul>
+"""
+while a<=b:
+    resultado += f"<li>{a}</li>"
+    a+=1
+resultado += "</ul>"
+{% endblock %}

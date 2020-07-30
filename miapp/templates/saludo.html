@@ -1,3 +1,12 @@
-<h1>Bienvenidos</h1>
-<h2>Pilar Navarro Espinoza</h2>
-<h3>Lenguaje de Programación - Django</h3>
+{% extends 'layout.html' %}
+
+{% block title %}
+    saludo
+{% endblock %}
+
+{% block content %}
+    <h1 class="title">Bienvenidos</h1>
+    <h2>Pilar Navarro</h2>
+    <h3>Python..</h3>
+    {{block.super}}
+{% endblock %}
